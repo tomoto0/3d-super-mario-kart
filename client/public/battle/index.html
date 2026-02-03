@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Balloon Battle 3D - Battle Kart Arena</title>
+    <meta
+      name="description"
+      content="A fast 3D balloon battle inspired by classic kart battles. Pop balloons, collect items, and defeat AI rivals." />
+    <meta name="keywords" content="balloon battle, kart battle, 3d game, browser game" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/battle/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="battle-root">
+      <canvas id="battle-canvas"></canvas>
+
+      <div id="ui-hud" class="hidden">
+        <div class="hud-left">
+          <div class="hud-label">Balloons</div>
+          <div id="balloon-bar" class="balloon-bar">
+            <div class="balloon-icon" data-balloon="0"></div>
+            <div class="balloon-icon" data-balloon="1"></div>
+            <div class="balloon-icon" data-balloon="2"></div>
+          </div>
+        </div>
+        <div class="hud-center">
+          <div id="status-banner" class="status-banner">Battle Ready</div>
+        </div>
+        <div class="hud-right">
+          <div class="hud-label">Speed</div>
+          <div id="speed-readout" class="speed-readout">0</div>
+          <div class="hud-label">Item</div>
+          <div id="item-slot" class="item-slot">
+            <div id="item-icon" class="item-icon">?</div>
+            <div id="item-label" class="item-label">Empty</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-menu">
+        <div class="menu-panel">
+          <div class="menu-title">Balloon Battle 3D</div>
+          <div class="menu-subtitle">Pop balloons. Defeat every rival.</div>
+
+          <div class="stage-grid">
+            <button class="stage-card active" data-stage="grassland">
+              <span class="stage-name">Grassland Arena</span>
+              <span class="stage-desc">Wide open. Perfect for warmups.</span>
+            </button>
+            <button class="stage-card" data-stage="snowfield">
+              <span class="stage-name">Snowfield Arena</span>
+              <span class="stage-desc">Icy ramps and layered jumps.</span>
+            </button>
+            <button class="stage-card" data-stage="bowser">
+              <span class="stage-name">Fortress Arena</span>
+              <span class="stage-desc">Multi-level, traps, and chaos.</span>
+            </button>
+          </div>
+
+          <div class="menu-actions">
+            <button id="start-battle" class="action-btn primary">Start Battle</button>
+            <button id="practice-battle" class="action-btn">Practice Ride</button>
+          </div>
+
+          <div class="menu-footnote">
+            Controls: WASD to drive, SPACE to drift, J to use item.
+          </div>
+        </div>
+      </div>
+
+      <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-card">
+          <div class="loading-title">Building Arena...</div>
+          <div class="loading-bar"><span class="loading-fill"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/battle/js/main.js"></script>
+  </body>
+</html>
