@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "courses": ["grassland", "snow", "castle", "rainbow"],
+  "default": "grassland",
+  "metadata": {
+    "grassland": {
+      "name": "Tropical Paradise",
+      "nameJa": "トロピカルパラダイス",
+      "theme": "grassland",
+      "difficulty": "easy",
+      "thumbnail": "/images/courses/grassland_thumb.png"
+    },
+    "snow": {
+      "name": "Frozen Peak",
+      "nameJa": "フローズンピーク",
+      "theme": "snow",
+      "difficulty": "medium",
+      "thumbnail": "/images/courses/snow_thumb.png"
+    },
+    "castle": {
+      "name": "Bowser's Fortress",
+      "nameJa": "クッパ城",
+      "theme": "castle",
+      "difficulty": "hard",
+      "thumbnail": "/images/courses/castle_thumb.png"
+    },
+    "rainbow": {
+      "name": "Rainbow Road",
+      "nameJa": "レインボーロード",
+      "theme": "rainbow",
+      "difficulty": "expert",
+      "thumbnail": "/images/courses/rainbow_thumb.png"
+    }
+  }
+}
