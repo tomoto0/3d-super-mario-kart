@@ -9,13 +9,16 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={() => {
-        // Redirect to game.html
-        if (typeof window !== 'undefined') {
-          window.location.href = '/game.html';
-        }
-        return null;
-      }} />
+      <Route
+        path={"/"}
+        component={() => {
+          // Redirect to the new balloon battle experience
+          if (typeof window !== "undefined") {
+            window.location.href = "/battle/index.html";
+          }
+          return null;
+        }}
+      />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
