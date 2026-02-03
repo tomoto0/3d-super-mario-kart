@@ -1,0 +1,7 @@
+# Vercel deployment configuration
+build: pnpm build
+outputDirectory: dist
+installCommand: pnpm install
+buildCommand: pnpm build
+devCommand: pnpm dev
+framework: vite
