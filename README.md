@@ -1,39 +1,120 @@
-# 3D Super Mario Kart
+# 🏎️ 3D Super Mario Kart - Browser Racing Game
 
-ブラウザで遊べる3Dカートレースゲームです。ゲーム内タイトルは **SUPER MARIO KART**。SNES風のキャラクターデザインとマリオカート風の演出を取り入れ、ドリフト・アイテム・AI対戦を楽しめます。
+A fully-featured 3D kart racing game built with Three.js, inspired by the classic Mario Kart series. Experience thrilling races with realistic physics, AI opponents, and multiple themed courses!
 
-## 概要
+## ✨ Features
 
-- Three.jsで動作するフル3Dのカートレーサー
-- プレイヤーはマリオ固定、AIはマリオカート風キャラクター（ルイージ、ピーチ、ヨッシー、クッパ、ドンキー、ワリオなど）
-- 草原・雪原・クッパ城の3コース
-- ドリフトでターボ発動（青→オレンジ→紫）
-- アイテムボックスのルーレット演出とSNES風アイコン
+### Core Gameplay
+- **3D Racing Engine**: Powered by Three.js with realistic physics and smooth 60fps gameplay
+- **Multiple Characters**: Choose from 8 unique Mario-style characters, each with different stats
+- **4+ Themed Courses**: Race through Grassland, Snow, Castle, and Rainbow Road environments
+- **AI Opponents**: Intelligent computer-controlled racers with configurable difficulty
+- **Power-up System**: Use items like missiles, shields, boosts, and course-specific abilities
+- **Lap Racing**: Complete 3-lap races with position tracking and timing
 
-## セットアップ
+### Advanced Systems
+- **Dynamic Camera**: Multiple camera modes with cinematic effects and smooth transitions
+- **Particle Effects**: Visual flair with exhaust, sparks, explosions, and environmental particles  
+- **Audio System**: Immersive sound effects and background music with Web Audio API
+- **Memory Management**: Object pooling and optimized rendering for smooth performance
+- **Course Editor Ready**: JSON-based course system for easy track creation
 
-### 前提条件
-- Node.js 18以上
-- pnpm
+### Technical Highlights
+- **Modern Web Stack**: React 19, TypeScript, Vite, TailwindCSS
+- **Three.js Integration**: Advanced 3D graphics with shaders and post-processing
+- **Responsive Design**: Works on desktop and mobile devices
+- **Production Ready**: Express server with proper build system
 
-### インストールと起動
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Installation
 ```bash
-# 依存関係をインストール
+# Clone the repository
+git clone https://github.com/tomoto0/3d-super-mario-kart.git
+cd 3d-super-mario-kart
+
+# Install dependencies
 pnpm install
 
-# 開発サーバーを起動
+# Start development server
 pnpm dev
 
-# ブラウザでアクセス
-open http://localhost:3000/game.html
+# Open browser to http://localhost:5173
 ```
 
-## 技術仕様
+### Play the Game
+1. Visit `http://localhost:5173/game.html` for the main racing game
+2. Or use `http://localhost:5173` for the React frontend
 
-- **フロントエンド**: React 19.2.1 + TypeScript + Vite
-- **3Dエンジン**: Three.js
-- **スタイリング**: TailwindCSS 4.x + Radix UI
-- **パッケージマネージャー**: pnpm
+## 🎮 Game Controls
 
-## ライセンス
-MIT License
+- **Arrow Keys / WASD**: Steer and accelerate
+- **Space**: Use power-up item  
+- **Shift**: Drift (builds boost when done correctly)
+- **R**: Reverse
+- **P**: Pause game
+- **C**: Cycle camera modes
+
+## 🏁 Course System
+
+Courses are defined in JSON format for easy customization. The game includes several themed environments with unique features and challenges.
+
+### Available Courses
+- **🌱 Grassland Circuit**: Beginner-friendly with gentle curves
+- **❄️ Sherbet Land**: Icy tracks with slippery surfaces
+- **🏰 Bowser's Castle**: Challenging course with lava and obstacles  
+- **🌈 Rainbow Road**: Expert-level floating track in space
+
+## 🛠️ Development
+
+### Project Structure
+```
+├── client/
+│   ├── public/
+│   │   ├── game.html          # Main game entry point
+│   │   ├── js/                # Game engine files
+│   │   ├── courses/           # Track definitions
+│   │   └── assets/            # Audio and images
+│   └── src/                   # React frontend
+├── server/                    # Express backend
+└── shared/                    # Common utilities
+```
+
+### Building for Production
+```bash
+# Build optimized version
+pnpm build
+
+# Start production server
+pnpm start
+```
+
+## 🎨 Customization
+
+The game is designed to be easily extensible with new characters, courses, and features through its modular JSON-based configuration system.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit pull requests for:
+- New courses and characters
+- Bug fixes and optimizations
+- Feature enhancements
+- Documentation improvements
+
+## 📜 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Inspired by Nintendo's Mario Kart series
+- Three.js community for excellent 3D web graphics
+- Open source contributors and testers
+
+---
+
+**Ready to race? Start your engines! 🏁**
