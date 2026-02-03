@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "name": "シャーベットランド",
+    "nameEn": "Sherbet Land",
+    "description": "凍てつく氷の世界を滑走！氷の洞窟、凍った湖、雪山のヘアピンカーブが待ち受ける中級者向けコース。急な下り坂と氷の橋が挑戦者を待つ！",
+    "difficulty": "medium",
+    "theme": "snow",
+    "laps": 3,
+    "estimatedTime": 110,
+    "author": "Nintendo Style"
+  },
+  "track": {
+    "width": 14,
+    "color": "#A8D8EA",
+    "borderColor": "#4FC3F7",
+    "surfaceType": "ice",
+    "waypoints": [
+      { "x": 0, "z": -180, "y": 0 },
+      { "x": 60, "z": -180, "y": 0 },
+      { "x": 120, "z": -165, "y": 2 },
+      { "x": 165, "z": -130, "y": 5 },
+      { "x": 190, "z": -80, "y": 8 },
+      { "x": 195, "z": -20, "y": 10 },
+      { "x": 180, "z": 40, "y": 12 },
+      { "x": 150, "z": 90, "y": 10 },
+      { "x": 100, "z": 130, "y": 7 },
+      { "x": 40, "z": 155, "y": 4 },
+      { "x": -30, "z": 160, "y": 2 },
+      { "x": -100, "z": 145, "y": 0 },
+      { "x": -155, "z": 110, "y": -2 },
+      { "x": -185, "z": 60, "y": -3 },
+      { "x": -195, "z": 0, "y": -2 },
+      { "x": -185, "z": -60, "y": 0 },
+      { "x": -155, "z": -110, "y": 2 },
+      { "x": -110, "z": -145, "y": 3 },
+      { "x": -55, "z": -170, "y": 2 }
+    ],
+    "finishLine": {
+      "waypointIndex": 0,
+      "direction": "x",
+      "position": { "x": 0, "y": 0, "z": -180 }
+    }
+  },
+  "features": {
+    "boostPads": [
+      { "x": 120, "z": -165, "y": 2, "rotation": 20, "width": 5, "length": 10 },
+      { "x": -155, "z": 110, "y": -2, "rotation": -135, "width": 5, "length": 10 },
+      { "x": -110, "z": -145, "y": 3, "rotation": -25, "width": 5, "length": 10 }
+    ],
+    "jumpRamps": [
+      { "x": 180, "z": 40, "y": 12, "rotation": 120, "width": 12, "height": 4 },
+      { "x": -185, "z": 0, "y": -2, "rotation": -90, "width": 12, "height": 3.5 }
+    ],
+    "icePatches": [
+      { "x": 195, "z": -20, "y": 10, "radius": 18 },
+      { "x": 100, "z": 130, "y": 7, "radius": 16 },
+      { "x": -100, "z": 145, "y": 0, "radius": 20 },
+      { "x": -195, "z": 0, "y": -2, "radius": 15 },
+      { "x": -155, "z": -110, "y": 2, "radius": 17 }
+    ],
+    "itemBoxes": [
+      { "position": { "x": 30, "z": -180, "y": 1 }, "count": 3, "spacing": 5 },
+      { "position": { "x": 165, "z": -130, "y": 5 }, "count": 2, "spacing": 6 },
+      { "position": { "x": 150, "z": 90, "y": 10 }, "count": 3, "spacing": 5 },
+      { "position": { "x": -30, "z": 160, "y": 2 }, "count": 3, "spacing": 5 },
+      { "position": { "x": -185, "z": 60, "y": -3 }, "count": 2, "spacing": 6 },
+      { "position": { "x": -110, "z": -145, "y": 3 }, "count": 3, "spacing": 5 }
+    ]
+  },
+  "startingGrid": {
+    "positions": [
+      { "x": 0, "y": 0, "z": -200, "rotation": 0 },
+      { "x": -6, "y": 0, "z": -205, "rotation": 0 },
+      { "x": 6, "y": 0, "z": -205, "rotation": 0 },
+      { "x": -12, "y": 0, "z": -210, "rotation": 0 },
+      { "x": 12, "y": 0, "z": -210, "rotation": 0 },
+      { "x": -18, "y": 0, "z": -215, "rotation": 0 },
+      { "x": 18, "y": 0, "z": -215, "rotation": 0 },
+      { "x": 0, "y": 0, "z": -220, "rotation": 0 }
+    ]
+  },
+  "ai": {
+    "difficulty": "medium",
+    "maxSpeedMultiplier": 1.15,
+    "reactionTime": 0.12,
+    "turnAccuracy": 0.88,
+    "itemUseProbability": 0.75,
+    "rubberBandStrength": 0.5,
+    "mistakeProbability": 0.08
+  },
+  "courseSpecific": {
+    "snowballs": {
+      "enabled": true,
+      "spawnInterval": 5,
+      "count": 3
+    },
+    "slipperyness": 0.7,
+    "visibility": 0.85,
+    "ambientEffects": ["snow", "wind", "fog"]
+  }
+}
